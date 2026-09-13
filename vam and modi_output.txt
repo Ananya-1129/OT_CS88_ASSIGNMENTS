@@ -1,0 +1,85 @@
+================================================
+       TRANSPORTATION PROBLEM
+       VAM + MODI METHOD
+================================================
+
+Cost Matrix:
+[ 4. 15.  2.]
+[10.  2. 11.]
+[ 8. 13.  3.]
+
+Supply = [33. 37. 14.]
+Demand = [11. 39. 34.]
+
+
+================================================
+              VAM SOLUTION
+================================================
+
+Initial Allocation:
+[11.  2. 20.]
+[ 0. 37.  0.]
+[ 0.  0. 14.]
+
+VAM Initial Cost = 230.0
+
+
+==============================================
+MODI ITERATION 1
+==============================================
+
+U values = [0, np.float64(-13.0), np.float64(1.0)]
+V values = [np.float64(4.0), np.float64(15.0), np.float64(2.0)]
+
+Opportunity Costs:
+Delta[2,1] = 19.0
+Delta[2,3] = 22.0
+Delta[3,1] = 3.0
+Delta[3,2] = -3.0
+
+Negative Delta found at: x32
+Solution is NOT optimal.
+
+Closed loop:
+x32 (+)
+x33 (-)
+x13 (+)
+x12 (-)
+
+Theta = 2.0
+
+New Allocation:
+[11.  0. 22.]
+[ 0. 37.  0.]
+[ 0.  2. 12.]
+
+
+==============================================
+MODI ITERATION 2
+==============================================
+
+U values = [0, np.float64(-10.0), np.float64(1.0)]
+V values = [np.float64(4.0), np.float64(12.0), np.float64(2.0)]
+
+Opportunity Costs:
+Delta[1,2] = 3.0
+Delta[2,1] = 16.0
+Delta[2,3] = 19.0
+Delta[3,1] = 3.0
+
+All Delta values >= 0.
+Solution is OPTIMAL.
+
+
+================================================
+              FINAL RESULT
+================================================
+
+Optimal Allocation:
+[11.  0. 22.]
+[ 0. 37.  0.]
+[ 0.  2. 12.]
+
+Minimum Transportation Cost = 224.0
+
+================================================
