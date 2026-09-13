@@ -1,0 +1,50 @@
+========== BIG-M SIMPLEX METHOD ==========
+
+Iteration: 0
+Basic Variables: ['a1', 's2', 's3']
+RHS: [ 4.  8. 10.]
+Cj - Zj: [ 1000003.  1000005. -1000000.  1000000.        0.        0.]
+Z = -4000000.0
+
+Entering Variable: x2
+Leaving Variable: a1
+------------------------------------------
+Iteration: 1
+Basic Variables: ['x2', 's2', 's3']
+RHS: [4. 4. 2.]
+Cj - Zj: [-2.  0.  5. -5.  0.  0.]
+Z = 20.0
+
+Entering Variable: s1
+Leaving Variable: s3
+------------------------------------------
+Iteration: 2
+Basic Variables: ['x2', 's2', 's1']
+RHS: [5. 3. 1.]
+Cj - Zj: [ 0.5  0.   0.   0.   0.  -2.5]
+Z = 25.0
+
+Entering Variable: x1
+Leaving Variable: s2
+------------------------------------------
+Iteration: 3
+Basic Variables: ['x2', 'x1', 's1']
+RHS: [4. 2. 2.]
+Cj - Zj: [ 0.      0.      0.      0.     -0.3333 -2.3333]
+Z = 26.0
+
+
+========== FINAL SOLUTION ==========
+
+x1 = 2.0
+x2 = 4.0
+s1 = 2.0
+a1 = 0.0
+s2 = 0.0
+s3 = 0.0
+
+Optimal Objective Value:
+Z = 26.0
+
+Artificial variable = 0
+Hence the solution is feasible.
